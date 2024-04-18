@@ -1,23 +1,23 @@
 // Errors and Error handling
 // javascript is little forgiving:)
 // for example 
-//variable = "dude";
-//console.log(variable);
+variable = "dude";
+console.log(variable);
 /* as we know this shouldn't give out put,
 we didn't define it as variable(const,let,var)
 but it is giving out put */
 // so we need to restrict the rules of javascript
 // inorder to do that we have 
-/*"use strict"; 
-//variable = "dude";
-//console.log(variable);
+"use strict"; 
+variable = "dude";
+console.log(variable);
 // now we have error (referenceError)
 // to fix this we know we need define variable**
 const variable = "dude";
-console.log(variable); */
+console.log(variable); 
 //////////////////////////////////////////
 // let's look at some different types of errors (not included all)
-/*"use strict";
+"use strict";
 // referenceError
 variable = "dude";
 console.log(variable); 
@@ -27,16 +27,16 @@ console.log(variable);
 we don't need catch the syntaxError. this won't 
 allow the code to execute either. this error will 
 stop the code right after finding it */
-/* Object..create(); 
+ Object..create(); 
 
 // typeError
 const variable = "dude";
-variable = "jack"; */
+variable = "jack"; 
 /////////////////////////////////////////////////////
 /* let's goahead and create a function that 
 will intentionally make an error */
 // and try to catch the create error (try and catch) ****
-/*
+
 const makeError = () => {
  try {
    const name = "dude";
@@ -51,7 +51,7 @@ that's because we used .log method , we can use .log
 .error, .warn, .table let's try each */
 //////////////////////// 
 // think of properties (.name, .massage, .stack)***
-/*
+
 "use strict";
 const makeError = () => {
   try {
@@ -67,7 +67,7 @@ logging error to the console you might wanna
 function with it, 
 to do that we have ** logTheError *** */
 ////////////////////////////////////
-/*
+
 "use strict";
 const makeError = () => {
   try {
@@ -83,7 +83,7 @@ makeError();
 you can record it and look at the logs later on */
 /////////////////////////////////////////////////
 // let's create a custom error****
-/*
+
 "use strict";
 const makeError = () => {
   try {
@@ -102,10 +102,10 @@ function customError(message) {
   this.name = "customError";
   this.message = message;
   this.stack = `${this.name} : ${this.message}`;
-} */
+} 
 //////////////////////////////////////////////
 // one more time!
-/*
+
 "use strict";
 const makeError = () => {
   try {
@@ -121,10 +121,10 @@ function customError(message) {
   this.name = "customError";
   this.message = message;
   this.stack = `${this.name} : ${this.message}`;
-} */
+} 
 //////////////////////////////////////////////////
 // **** generic built-in error constructor ****
-/*
+
 "use strict";
 const makeError = () => {
   try {
@@ -144,7 +144,7 @@ what the condition is *** */
 /* to bring * finally * fully functional we
 need to use something that iterates the function 
 several times. inorder to do that we have */
-/*
+
 "use strict";
 const makeError = () => {
   let i = 1;
@@ -161,9 +161,9 @@ const makeError = () => {
           //finally executes for every step no what the condition is 
     }
   }
-} */
+} 
 //=================================//
-/*
+
 "use strict";
 const makeError = () => {
   let i = 1;
@@ -186,9 +186,9 @@ const makeError = () => {
     }
   }
 }
-makeError(); */
+makeError(); 
 //========================================//
-/*
+
 "use strict";
 const makeError = () => {
   let i = 1;
@@ -206,9 +206,9 @@ const makeError = () => {
     }
   }
 }
-makeError(); */
+makeError(); 
 //============================================//
-/*
+
 "use strict";
 const makeError = () => {
   let i = 1;
@@ -226,9 +226,9 @@ const makeError = () => {
     }
   }
 }
-makeError(); */
+makeError(); 
 //===========================================//
-/*
+
 "use strict";
 const makeError = () => {
   let i = 1;
@@ -246,9 +246,9 @@ const makeError = () => {
     }
   }
 }
-makeError(); */
+makeError(); 
 //============================================//
-/*
+
 "use strict";
 const makeError = () => {
   let i = 1;
@@ -268,7 +268,7 @@ const makeError = () => {
     }
   }
 }
-makeError(); */
+makeError(); 
 //=======================================//
 "use strict";
 const makeError = () => {
